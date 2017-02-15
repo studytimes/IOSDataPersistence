@@ -34,27 +34,27 @@
     
 }
 
-//冒泡排序 从小到大
-- (void)maopaoset{
-
-    NSArray *tmpa  = @[@1,@3,@4,@8,@6,@10];
-    int count = (int)[tmpa count];
-    
-    for (int i =0; i<count-1; i++) {
-        //
-        bool isSorted = true;
-        for (int j=0; j<count-i-1; j++) {
-            if (tmpa[j]>tmpa[j+1]) {
-                isSorted = false;
-                int tmp = tmpa[j];
-                            }
-        }
-        if (!isSorted) {
-            break;
-        }
-    }
-
-}
+////冒泡排序 从小到大
+//- (void)maopaoset{
+//
+//    NSArray *tmpa  = @[@1,@3,@4,@8,@6,@10];
+//    int count = (int)[tmpa count];
+//    
+//    for (int i =0; i<count-1; i++) {
+//        //
+//        bool isSorted = true;
+//        for (int j=0; j<count-i-1; j++) {
+//            if (tmpa[j]>tmpa[j+1]) {
+//                isSorted = false;
+//                int tmp = tmpa[j];
+//                            }
+//        }
+//        if (!isSorted) {
+//            break;
+//        }
+//    }
+//
+//}
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
