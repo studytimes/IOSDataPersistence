@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA5BB3621E559B6F00745F03 /* Market.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5BB3611E559B6F00745F03 /* Market.m */; };
+		FA5BB3671E55AE1E00745F03 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5BB3661E55AE1E00745F03 /* Realm.framework */; };
+		FA5BB36B1E55AF1700745F03 /* Realm.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FA5BB3661E55AE1E00745F03 /* Realm.framework */; };
 		FA63788F1E4AF7DC00B36038 /* NSKeyArchiverController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA63788E1E4AF7DC00B36038 /* NSKeyArchiverController.m */; };
 		FA6378921E4AF93400B36038 /* Shop.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6378911E4AF93400B36038 /* Shop.m */; };
 		FA8B0E131E486E56006F7855 /* CoreDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8B0E121E486E56006F7855 /* CoreDataBase.m */; };
@@ -42,7 +45,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FA5BB36A1E55AEFF00745F03 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				FA5BB36B1E55AF1700745F03 /* Realm.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		FA5BB3601E559B6F00745F03 /* Market.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Market.h; sourceTree = "<group>"; };
+		FA5BB3611E559B6F00745F03 /* Market.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Market.m; sourceTree = "<group>"; };
+		FA5BB3661E55AE1E00745F03 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		FA5BB3681E55AEE100745F03 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		FA63788D1E4AF7DC00B36038 /* NSKeyArchiverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSKeyArchiverController.h; sourceTree = "<group>"; };
 		FA63788E1E4AF7DC00B36038 /* NSKeyArchiverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSKeyArchiverController.m; sourceTree = "<group>"; };
 		FA6378901E4AF93400B36038 /* Shop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shop.h; sourceTree = "<group>"; };
@@ -99,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA5BB3671E55AE1E00745F03 /* Realm.framework in Frameworks */,
 				FAB177D61E49B593002FF447 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,6 +134,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA5BB3651E55AE1E00745F03 /* dynamic */ = {
+			isa = PBXGroup;
+			children = (
+				FA5BB3661E55AE1E00745F03 /* Realm.framework */,
+			);
+			path = dynamic;
+			sourceTree = "<group>";
+		};
 		FA63788A1E4AF77C00B36038 /* FMDBWay */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +197,7 @@
 		FAB177D41E49B593002FF447 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA5BB3681E55AEE100745F03 /* libc++.tbd */,
 				FAB177D51E49B593002FF447 /* libsqlite3.tbd */,
 			);
 			name = Frameworks;
@@ -178,6 +208,8 @@
 			children = (
 				FADBB0731E4D50810073BDA7 /* RealmViewController.h */,
 				FADBB0741E4D50810073BDA7 /* RealmViewController.m */,
+				FA5BB3601E559B6F00745F03 /* Market.h */,
+				FA5BB3611E559B6F00745F03 /* Market.m */,
 			);
 			name = Realm;
 			sourceTree = "<group>";
@@ -205,6 +237,7 @@
 		FAF0C4621DC9DB37005B2BF3 /* TestCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				FA5BB3651E55AE1E00745F03 /* dynamic */,
 				FADBB0721E4D4FD90073BDA7 /* Realm */,
 				FA63788C1E4AF79400B36038 /* NSKeyedArchiverWay */,
 				FAB177BB1E49A19D002FF447 /* fmdb */,
@@ -252,6 +285,7 @@
 				FAF0C45C1DC9DB36005B2BF3 /* Sources */,
 				FAF0C45D1DC9DB36005B2BF3 /* Frameworks */,
 				FAF0C45E1DC9DB36005B2BF3 /* Resources */,
+				FA5BB36A1E55AEFF00745F03 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -365,6 +399,7 @@
 				FAB177CC1E49A19D002FF447 /* FMResultSet.m in Sources */,
 				FAB177BA1E4971EE002FF447 /* CoreDataViewController.m in Sources */,
 				FAB177C91E49A19D002FF447 /* FMDatabaseAdditions.m in Sources */,
+				FA5BB3621E559B6F00745F03 /* Market.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,11 +544,17 @@
 		FAF0C4861DC9DB38005B2BF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: liu hongliang (RGX8M7FP72)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: liu hongliang (RGX8M7FP72)";
 				DEVELOPMENT_TEAM = J6HTH2R28B;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dynamic",
+					"$(PROJECT_DIR)/TestCoreData/dynamic",
+				);
 				INFOPLIST_FILE = TestCoreData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.hk.ddg;
@@ -529,11 +570,17 @@
 		FAF0C4871DC9DB38005B2BF3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: liu hongliang (RGX8M7FP72)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: liu hongliang (RGX8M7FP72)";
 				DEVELOPMENT_TEAM = J6HTH2R28B;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dynamic",
+					"$(PROJECT_DIR)/TestCoreData/dynamic",
+				);
 				INFOPLIST_FILE = TestCoreData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.hk.ddg;

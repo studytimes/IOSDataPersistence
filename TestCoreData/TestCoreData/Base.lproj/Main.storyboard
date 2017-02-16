@@ -190,13 +190,64 @@
                     <view key="view" contentMode="scaleToFill" id="Dp4-5Y-ktx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tw-j9-QCl">
+                                <rect key="frame" x="32" y="96" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="增加"/>
+                                <connections>
+                                    <action selector="addData:" destination="Zv7-yl-g16" eventType="touchUpInside" id="5lf-qu-c2G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ig-bq-svN">
+                                <rect key="frame" x="122" y="96" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="更新"/>
+                                <connections>
+                                    <action selector="updateData:" destination="Zv7-yl-g16" eventType="touchUpInside" id="k2p-Gm-Lqp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SdH-Cm-Mhn">
+                                <rect key="frame" x="215" y="96" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="删除"/>
+                                <connections>
+                                    <action selector="deleteData:" destination="Zv7-yl-g16" eventType="touchUpInside" id="CCk-gM-plc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZw-DB-w1I">
+                                <rect key="frame" x="312" y="96" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="查询"/>
+                                <connections>
+                                    <action selector="queryData:" destination="Zv7-yl-g16" eventType="touchUpInside" id="647-aN-aIG"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fzq-9x-EWM">
+                                <rect key="frame" x="0.0" y="367" width="375" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="S1e-l7-2xG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fzq-9x-EWM" secondAttribute="trailing" id="21D-aD-SRG"/>
+                            <constraint firstItem="fzq-9x-EWM" firstAttribute="leading" secondItem="Dp4-5Y-ktx" secondAttribute="leading" id="B6M-o3-pVq"/>
+                            <constraint firstItem="Uxe-75-qN3" firstAttribute="top" secondItem="fzq-9x-EWM" secondAttribute="bottom" id="pYx-Ou-SRa"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xKE-sm-7dB"/>
+                    <connections>
+                        <outlet property="datainfoTextView" destination="fzq-9x-EWM" id="eYi-sY-R6p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RJD-uh-Eik" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="161" y="439"/>
+            <point key="canvasLocation" x="164" y="430"/>
         </scene>
         <!--Core Data View Controller-->
         <scene sceneID="qmt-SU-mZJ">
