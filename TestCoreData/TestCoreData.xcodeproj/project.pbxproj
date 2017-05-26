@@ -23,6 +23,9 @@
 		FAB177D01E49A1BA002FF447 /* FMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB177CF1E49A1BA002FF447 /* FMDBViewController.m */; };
 		FAB177D31E49A2C3002FF447 /* FMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB177D21E49A2C3002FF447 /* FMDBManager.m */; };
 		FAB177D61E49B593002FF447 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB177D51E49B593002FF447 /* libsqlite3.tbd */; };
+		FAC649831E83AD5F0009788E /* SAMKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC649801E83AD5F0009788E /* SAMKeychain.m */; };
+		FAC649841E83AD5F0009788E /* SAMKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC649821E83AD5F0009788E /* SAMKeychainQuery.m */; };
+		FAC649871E83AE9E0009788E /* KeyChainController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC649861E83AE9E0009788E /* KeyChainController.m */; };
 		FADBB0751E4D50810073BDA7 /* RealmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FADBB0741E4D50810073BDA7 /* RealmViewController.m */; };
 		FAF0C4651DC9DB37005B2BF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C4641DC9DB37005B2BF3 /* main.m */; };
 		FAF0C4681DC9DB37005B2BF3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF0C4671DC9DB37005B2BF3 /* AppDelegate.m */; };
@@ -89,6 +92,12 @@
 		FAB177D11E49A2C3002FF447 /* FMDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBManager.h; sourceTree = "<group>"; };
 		FAB177D21E49A2C3002FF447 /* FMDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBManager.m; sourceTree = "<group>"; };
 		FAB177D51E49B593002FF447 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		FAC6497F1E83AD5F0009788E /* SAMKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMKeychain.h; sourceTree = "<group>"; };
+		FAC649801E83AD5F0009788E /* SAMKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMKeychain.m; sourceTree = "<group>"; };
+		FAC649811E83AD5F0009788E /* SAMKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMKeychainQuery.h; sourceTree = "<group>"; };
+		FAC649821E83AD5F0009788E /* SAMKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMKeychainQuery.m; sourceTree = "<group>"; };
+		FAC649851E83AE9E0009788E /* KeyChainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyChainController.h; sourceTree = "<group>"; };
+		FAC649861E83AE9E0009788E /* KeyChainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyChainController.m; sourceTree = "<group>"; };
 		FADBB0731E4D50810073BDA7 /* RealmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealmViewController.h; sourceTree = "<group>"; };
 		FADBB0741E4D50810073BDA7 /* RealmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RealmViewController.m; sourceTree = "<group>"; };
 		FAF0C4601DC9DB36005B2BF3 /* TestCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,6 +212,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FAC6497D1E83AD590009788E /* NSUserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				FAC6497E1E83AD5F0009788E /* Sources */,
+				FAC649851E83AE9E0009788E /* KeyChainController.h */,
+				FAC649861E83AE9E0009788E /* KeyChainController.m */,
+			);
+			path = NSUserDefaults;
+			sourceTree = "<group>";
+		};
+		FAC6497E1E83AD5F0009788E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FAC6497F1E83AD5F0009788E /* SAMKeychain.h */,
+				FAC649801E83AD5F0009788E /* SAMKeychain.m */,
+				FAC649811E83AD5F0009788E /* SAMKeychainQuery.h */,
+				FAC649821E83AD5F0009788E /* SAMKeychainQuery.m */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		FADBB0721E4D4FD90073BDA7 /* Realm */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +267,7 @@
 		FAF0C4621DC9DB37005B2BF3 /* TestCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				FAC6497D1E83AD590009788E /* NSUserDefaults */,
 				FA5BB3651E55AE1E00745F03 /* dynamic */,
 				FADBB0721E4D4FD90073BDA7 /* Realm */,
 				FA63788C1E4AF79400B36038 /* NSKeyedArchiverWay */,
@@ -390,12 +421,15 @@
 				FAF0C4681DC9DB37005B2BF3 /* AppDelegate.m in Sources */,
 				FA63788F1E4AF7DC00B36038 /* NSKeyArchiverController.m in Sources */,
 				FA6378921E4AF93400B36038 /* Shop.m in Sources */,
+				FAC649871E83AE9E0009788E /* KeyChainController.m in Sources */,
 				FAB177D01E49A1BA002FF447 /* FMDBViewController.m in Sources */,
+				FAC649841E83AD5F0009788E /* SAMKeychainQuery.m in Sources */,
 				FAB177C81E49A19D002FF447 /* FMDatabase.m in Sources */,
 				FAB177CA1E49A19D002FF447 /* FMDatabasePool.m in Sources */,
 				FAB177CB1E49A19D002FF447 /* FMDatabaseQueue.m in Sources */,
 				FAF0C4651DC9DB37005B2BF3 /* main.m in Sources */,
 				FA8B0E131E486E56006F7855 /* CoreDataBase.m in Sources */,
+				FAC649831E83AD5F0009788E /* SAMKeychain.m in Sources */,
 				FAB177CC1E49A19D002FF447 /* FMResultSet.m in Sources */,
 				FAB177BA1E4971EE002FF447 /* CoreDataViewController.m in Sources */,
 				FAB177C91E49A19D002FF447 /* FMDatabaseAdditions.m in Sources */,

@@ -76,6 +76,11 @@
         [self performSegueWithIdentifier:@"NSKeyArchiverWay" sender:self];
         return;
     }
+
+    if (indexPath.row == 1) {
+        [self performSegueWithIdentifier:@"'KeyChainController" sender:self];
+        return;
+    }
     
     if (indexPath.row == 3) {
         [self performSegueWithIdentifier:@"FMDBPush" sender:self];
